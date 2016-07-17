@@ -1,0 +1,41 @@
+*audionote.txt* Documentation for audionote (Voice recorder)
+
+Script  :   audionote.vim  - audio notes for vim.
+Autor   :   E. Manuel Cerrón Angeles
+Email   :   <xerron.angels@gmail.com>
+Changed :   2016-07-15
+============================================================
+                                           *audionote-intro*
+
+1. Overview~
+TODO
+
+1. Overview                         |audionote-intro|
+2. Mappings                         |audionote-mappings|
+3. Functions                        |audionote-functions|
+4. Todo                             |audionote-todo|
+
+===========================================================
+                                        *audionote-mappings*
+
+2. Mappings~
+TODO
+
+===========================================================
+                                        *audionote-function*
+
+3. Functions~
+
+MyglobalfunctionB()~
+This function is one of the global functions in this script.
+An example of usage could be: >
+    :call MyglobalfunctionB()
+<
+    Vim returns:
+    Hello from MyglobalfuncionC() now calling locally:~
+    This is the script-scope function MyfunctionA speaking~
+
+===========================================================
+                                        *audionote-todo*
+
+4. Todo~
