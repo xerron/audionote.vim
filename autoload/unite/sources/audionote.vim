@@ -42,7 +42,7 @@ function! s:source_audionote.gather_candidates(args, context)
   let _ = map(filter(split(glob(g:audionote#directory . '/**'), '\n'),
         \  'filereadable(v:val)'), "{
         \ 'word' : fnamemodify(v:val, ':t'),
-        \ 'kind' : 'file',
+        \ 'kind' : 'audio',
         \ 'action__path' : unite#util#substitute_path_separator(v:val),
         \ }
         \")
@@ -54,6 +54,7 @@ let s:source_audionote_new = {
       \ 'name' : 'audionote/new',
       \ 'description' : 'new candidates in audionote',
       \ 'action_table' : {},
+      \ 'default_action' : {'audio': 'new' },
       \ }
 
 " crea un nuevo audio
@@ -72,7 +73,7 @@ function! s:source_audionote_new.change_candidates(args, context)
   let _ = map([filename], "{
         \ 'word' : fnamemodify(v:val, ':t'),
         \ 'abbr' : '[new audio] ' . fnamemodify(v:val, ':t'),
-        \ 'kind' : 'file',
+        \ 'kind' : 'audio',
         \ 'action__path' : v:val,
         \ }
         \")
@@ -103,7 +104,8 @@ let s:source_audionote.action_table.unite__new_candidate = {
 
 " create new
 function! s:source_audionote.action_table.unite__new_candidate.func(candidate) 
-  call audionote#open(strftime('%Y-%m-%d-%H%M%S.'))
+  "call audionote#open(strftime('%Y-%m-%d-%H%M%S.'))
+  echo "Sex Esto esta dentro de autoload/unite/source/audionote.vim"
 endfunction
 
 let s:source_audionote_new.action_table.unite__new_candidate =

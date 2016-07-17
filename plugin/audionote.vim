@@ -30,8 +30,7 @@ endif
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! -nargs=? audionoteOpen call audionote#open(
-      \ strftime('%Y-%m-%d-%H%M%S.'), <q-args>)
+command! -nargs=? AudionoteOpen call audionote#open(strftime('%Y-%m-%d-%H%M%S.'), <q-args>)
 
 let g:loaded_audionote = 1
 
