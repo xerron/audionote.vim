@@ -9,7 +9,8 @@ Add easy audio notes to Vim.  Voice Recorder
 ## Requeriment
 
 Require [Unite.vim](https://github.com/Shougo/unite.vim)
-![](https://s3.amazonaws.com/github-csexton/unite-01.gif)
+
+[![Stories in Ready](https://badge.waffle.io/Shougo/unite.vim.png)](https://waffle.io/Shougo/unite.vim)  
 
 ### GNU/Linux
 
