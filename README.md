@@ -2,17 +2,21 @@
 
 Add easy audio notes to Vim.  Voice Recorder
 
+![unite - audio - gvim1_020](https://cloud.githubusercontent.com/assets/1724033/16904150/4a94631a-4c56-11e6-9de4-f6cf223a4bf3.png)
+
+![sin nombre - gvim1_019](https://cloud.githubusercontent.com/assets/1724033/16904153/56d3b702-4c56-11e6-9eb5-a7dd1c80531b.png)
+
 ## Requeriment
 
-### For GNU/Linux
+### GNU/Linux
 
 - ogg123 (sudo apt-get install install vorbis-tools) 
 - speex (sudo apt-get install speex)
 - alsamixer (arecord command)
 
-* I use speex for encode audio, very good for voice recorder.
+I use speex for encode audio, very good for voice recorder.
 
-### For Windows
+### Windows
 
 I hate windows but try configure global variables. 
 
