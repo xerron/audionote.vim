@@ -8,6 +8,9 @@ Add easy audio notes to Vim.  Voice Recorder
 
 ## Requeriment
 
+Require [Unite.vim](https://github.com/Shougo/unite.vim)
+![](https://s3.amazonaws.com/github-csexton/unite-01.gif)
+
 ### GNU/Linux
 
 - ogg123 (sudo apt-get install install vorbis-tools) 
