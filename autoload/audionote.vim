@@ -29,8 +29,6 @@ set cpo&vim
 
 let g:audionote#directory =
       \ get(g:, 'audionote#directory', $HOME . '/.cache/audionote')
-let g:audionote#edit_command =
-      \ get(g:, 'audionote#edit_command', 'edit')
 let g:audionote#record_command =
       \ get(g:, 'audionote#record_command', 'arecord -f S16_LE -c1 -r8000 -t raw | speexenc - --vad ')
 let g:audionote#play_command =
